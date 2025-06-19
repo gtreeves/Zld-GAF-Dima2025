@@ -83,13 +83,13 @@ for iii = 1:n_embryos
 	end
 end
 
-save(['Mat/',clk,'_',outfilename(1:end-1)],'Data','LE')
+save([clk,'_',outfilename(1:end-1)],'Data','LE')
 
 for iii = 1:n_embryos
 	Soln = [Soln;Data{iii}];
 end
 
-save(['Mat/',clk,'_',outfilename(1:end-1)],'Soln','LE')
+save([clk,'_',outfilename(1:end-1)],'Soln','LE')
 
 
 
